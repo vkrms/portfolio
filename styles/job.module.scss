@@ -1,0 +1,75 @@
+.job {
+    font-family: 'Work Sans', sans-serif;
+    max-width: 64ch;
+    margin-inline: auto;
+    padding: 64px 0;
+    font-size: 18px;
+    --icterine: #E8EC67;
+}
+
+.title {
+    line-height: 1.1;
+    margin-bottom: 1.4em;
+}
+
+.content {
+    line-height: 1.6;
+    max-width: 700px;
+    white-space: pre-line;
+}
+
+.image {
+    border-radius: 6px;
+    width: 102%;
+    max-width: none;
+    justify-self: center;
+
+    &__wrapper {
+        border-radius: 6px;
+        overflow: hidden;
+        display: grid;
+        margin-bottom: 1em;
+    }
+}
+
+.meta {
+    margin-bottom: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    gap: 8px;
+
+    &__title {
+        display: block;
+        line-height: 32px;
+    }
+
+    &__client {
+        line-height: 32px;
+    }
+}
+
+.pill {
+    display: inline-block;
+    padding: 0 16px;
+    border-radius: 16px;
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    background: var(--icterine);
+    text-transform: lowercase;
+}
+
+.pills {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    margin-bottom: 2em;
+    line-height: 32px;
+}
