@@ -111,9 +111,8 @@ export default function Job({ bar, params }) {
                 <section className='images'>
                     {
                         bar.images?.map((image: string) => (
-                            <div className={style.image__wrapper}>
+                            <div className={style.image__wrapper} key={image}>
                                 <Image
-                                    key={image}
                                     src={image}
                                     alt=""
                                     width={700}
@@ -128,7 +127,7 @@ export default function Job({ bar, params }) {
                 <section className='videos'>
                     {
                         bar.videos?.map((src: string) => (
-                            <div className={style.image__wrapper}>
+                            <div className={style.image__wrapper} key={src}>
                                 <Video src={src} />
                             </div>
                         ))
