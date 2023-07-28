@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import cn from 'classnames'
 
 import style from '@/styles/job.module.scss';
 import { getAllPostSlugs } from '../../lib/posts';
+import Video from '../../components/video';
 
 // Return a list of possible values for slug
 export async function getStaticPaths() {
@@ -70,9 +72,9 @@ export default function Job({ bar, params }) {
 
     return (
         <article className={style.job}>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200..700&display=swap" rel="stylesheet" />
+            <header className={style.header}>
+                <Link href="/" className={style.back} title="go back" />
+            </header>
 
 
             <h1 className={style.title}>{bar.title}</h1>
@@ -86,35 +88,52 @@ export default function Job({ bar, params }) {
 
 
             <div className={style.content}>
-                <p>
-                    {bar.text}
-                </p>
+                <div className={style.text}
+                    dangerouslySetInnerHTML={{ __html: bar.text }}
+                />
 
-                <div className={style.meta}>
+                <div className={style.links}>
                     {
                         bar.links?.map((link, i) => (
-                            <>
-                                {link.text}
-                                <a key={i} href={link.url} target="_blank">{link.linkText}</a>
-                            </>
+                            <div className={style.link} key={i}>
+                                <span>{link.text}</span>
+                                <a
+                                    href={link.url}
+                                    target="_blank"
+                                >
+                                    {link.linkText}
+                                </a>
+                            </div>
                         ))
                     }
                 </div>
 
-                {
-                    bar.images?.map((image: string) => (
-                        <div className={style.image__wrapper}>
-                            <Image
-                                key={image}
-                                src={image}
-                                alt=""
-                                width={700}
-                                height={526}
-                                className={style.image}
-                            />
-                        </div>
-                    ))
-                }
+                <section className='images'>
+                    {
+                        bar.images?.map((image: string) => (
+                            <div className={style.image__wrapper}>
+                                <Image
+                                    key={image}
+                                    src={image}
+                                    alt=""
+                                    width={700}
+                                    height={526}
+                                    className={style.image}
+                                />
+                            </div>
+                        ))
+                    }
+                </section>
+
+                <section className='videos'>
+                    {
+                        bar.videos?.map((src: string) => (
+                            <div className={style.image__wrapper}>
+                                <Video src={src} />
+                            </div>
+                        ))
+                    }
+                </section>
             </div>
         </article>
     )

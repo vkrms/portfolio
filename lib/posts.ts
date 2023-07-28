@@ -13,3 +13,14 @@ export function getAllPostSlugs() {
         };
     });
 }
+
+// todo: dry
+export function getAllPostSlugsB() {
+    const fileNames = fs.readdirSync(postsDirectory);
+
+    return fileNames.map((fileName) => {
+        return {
+            slug: fileName.replace(/\.js$/, ''),
+        };
+    });
+}

@@ -1,22 +1,22 @@
+@import "breakpoints";
+
 .job {
-    font-family: 'Work Sans', sans-serif;
     max-width: 64ch;
     margin-inline: auto;
-    padding: 64px 0;
-    font-size: 18px;
-    --icterine: #E8EC67;
+    padding: 32px 0;
 }
 
 .title {
     line-height: 1.1;
     margin-bottom: 1.4em;
+    font-weight: 600;
 }
 
-.content {
-    line-height: 1.6;
-    max-width: 700px;
-    white-space: pre-line;
-}
+// .content {
+//     line-height: 1.6;
+//     white-space: pre-line;
+//     max-width: 700px;
+// }
 
 .image {
     border-radius: 6px;
@@ -72,4 +72,33 @@
     grid-gap: 1rem;
     margin-bottom: 2em;
     line-height: 32px;
+}
+
+.links {
+    margin-bottom: 3em;
+}
+
+.link {
+    display: block;
+}
+
+.text {
+    margin-bottom: 1em;
+}
+
+.back {
+    background-image: url('../public/back.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+
+    @include small {
+        display: block;
+    }
+}
+
+.header {
+    margin-bottom: 32px;
 }

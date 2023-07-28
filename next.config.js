@@ -13,6 +13,15 @@ const nextConfig = {
       {
         hostname: 'screencastify.com',
       },
+      {
+        hostname: 'random.imagecdn.app',
+      },
+      {
+        hostname: 'drive.google.com',
+      },
+      {
+        hostname: 'images.ctfassets.net',
+      }
     ],
   },
 }
