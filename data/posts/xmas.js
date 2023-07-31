@@ -1,4 +1,6 @@
 const job = {
+    client: 'Travelpayouts',
+
     title: "Advent Calendar in Vue.js & Firebase",
 
     images: [
