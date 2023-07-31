@@ -41,8 +41,6 @@ export async function getStaticProps() {
 
 
 export default function Home({ jobs }) {
-  console.log({ jobs })
-
   return (
     <div className={cn('container', styles.container)}>
       <Head>
@@ -52,9 +50,8 @@ export default function Home({ jobs }) {
       </Head>
 
       <header>
-        <div>Hi, my name is</div>
         <h1 className='hero__h1'>
-          <div>Pavel Maliuk.</div>
+          <div>Hi, I&apos;m Pavel Maliuk.</div>
           <div>I build web things.</div>
         </h1>
 
