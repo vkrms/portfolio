@@ -1,5 +1,5 @@
 const job = {
-    title: "A web Game in Vue.js & Laravel",
+    title: "A Web Game in Vue.js & Laravel",
 
     text: `
             A project I worked on as a full-stack engineer for Travelpayouts.com marketing dept.
