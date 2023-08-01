@@ -8,7 +8,7 @@ const job = {
 
             <ul>
                 <li>Frontend done in Vue.js, using modular SCSS, built with webpack</li>
-                <li>Responsive: looks good on all devices and platforms, responsive, even in landscape mode on smartphones, which is not recommend though ))</li>
+                <li>Responsive: looks good on all devices and platforms, responsive, even in landscape mode on smartphones, which is not recommended though ))</li>
                 <li>Has various CSS and JS animations, most notable are sprite characters</li>
                 <li>Uses Canvas via Imagick to generate unique og images with game results for sharing on social media</li>
                 <li>Admin area made with Voyager where questions and answers could be managed, stored in a MySQL database</li>
@@ -30,10 +30,10 @@ const job = {
     ],
 
     images: [
-        'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330393/tuivxau64skecmyu99a1.png',
+        'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330729/fbidisguqx6zkvftg2vz.png',
         'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330729/tycfz6tz6uohraui7xhb.png',
         'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330729/gv5vryus5jdy4zkvsvbd.png',
-        'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330729/fbidisguqx6zkvftg2vz.png',
+        'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330393/tuivxau64skecmyu99a1.png',
         'https://media.contra.com/image/upload/c_limit,fl_lossy,w_1700/v1687330393/e3waezd2ovc0fvj5h5ya.png',
     ],
 
@@ -51,7 +51,7 @@ const job = {
 
     links: [
         {
-            text: 'Still available at:',
+            text: 'Still available at: ',
             linkText: 'affilionaire.travelpayouts.com',
             url: 'https://affilionaire.travelpayouts.com/',
         },
