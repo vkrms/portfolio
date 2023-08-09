@@ -29,6 +29,7 @@
         overflow: hidden;
         display: grid;
         margin-bottom: 1em;
+        border: solid 1px #eee;
     }
 }
 
@@ -84,6 +85,7 @@
 
 .text {
     margin-bottom: 1em;
+    white-space: pre-line;
 }
 
 .back {
