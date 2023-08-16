@@ -33,14 +33,19 @@ export async function getStaticProps() {
     }
   }
 
+  const sorted = jobs.sort((a, b) => {
+    const dateA = new Date(a.created) || null;
+    const dateB = new Date(b.created) || null;
+    return dateA > dateB ? -1 : dateA < dateB ? 1 : 0;
+  });
+
   const props = {
     props: {
-      jobs,
+      jobs: sorted,
     },
-  }
-  return props
+  };
+  return props;
 }
-
 
 export default function Home({ jobs }) {
   return (

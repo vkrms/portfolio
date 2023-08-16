@@ -1,4 +1,6 @@
 const job = {
+    created: '2018',
+
     title: "A Web Game in Vue.js & Laravel",
 
     text: `

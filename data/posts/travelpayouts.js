@@ -1,4 +1,6 @@
 const job = {
+    created: '2019',
+
     title: "Old Travelpayouts.com homepage in WordPress",
 
     text: `

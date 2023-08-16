@@ -1,4 +1,6 @@
 const job = {
+    created: '2022-06-15',
+
     slug: "tp-next",
 
     title: "Landing Page With Scroll Animation in Next.js & GSAP",

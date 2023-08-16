@@ -1,4 +1,6 @@
 const job = {
+    created: '2022',
+
     disabled: true,
 
     client: 'Aviasales',

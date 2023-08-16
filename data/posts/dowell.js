@@ -1,4 +1,6 @@
 const job = {
+    created: '2022',
+
     client: 'Dowell.team',
 
     title: "A Lively Vanilla JS landing page",
