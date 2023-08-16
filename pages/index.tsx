@@ -18,16 +18,17 @@ interface IndexJobProps {
 
 // this happens in node at build time
 export async function getStaticProps() {
-  const jobs = getAllPostSlugsB();
+  const slugs = getAllPostSlugsB();
+  const jobs: IndexJobProps[] = [];
 
   // get title, thumb, descr
-  for (const job of jobs) {
+  for (const slug of slugs) {
     try {
-      const jobData = await import(`/data/posts/${job.slug}`)
+      const jobData = await import(`/data/posts/${slug.slug}`)
         .then((data) => data.default)
         .catch((err) => console.error({ err }));
       // todo: job changes type here
-      Object.assign(job, jobData);
+      jobs.push(Object.assign(slug, jobData));
     } catch (err) {
       console.error({ err });
     }
