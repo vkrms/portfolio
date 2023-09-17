@@ -20,7 +20,7 @@ const job = {
         Gifts live in the Firebase, each one has variable number of promo codes with links to the app dashboard where they could be activated.
     `,
 
-    excerpt: `It was a Vue and Firebase advent calendar with a candy vibe and some sweet (pun intended) pre-rendered animations`,
+    excerpt: `It was a Vue and Firebase advent calendar with a candy vibe and some sweet (pun intended) pre-rendered animations`,
 
     links: [
         {

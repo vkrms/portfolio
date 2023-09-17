@@ -3,17 +3,17 @@ const job = {
 
     client: 'Myself',
 
-    title: "Rotating Feelings Wheel in React & d3.js",
+    title: "Rotating Feelings Wheel in React & d3.js",
 
     images: [
         ''
     ],
 
     text: `
-        %%
+        Psychology tools are usually handed down as a .jpg or a .docsx, which is not very usable. Sometimes I fix this.
     `,
 
-    excerpt: `%%`,
+    excerpt: `I did for myself, as an effort to reconnect with my values. It's really nice to code something useful every once in a while.`,
 
     links: [
         {
@@ -37,6 +37,8 @@ const job = {
     ],
 
     thumb: `/screens/wheelings/thumb.webp`,
+
+    years: '2023',
 }
 
 export default job
