@@ -103,7 +103,12 @@ body {
 
 a {
   // color: var(--link);
-  color: cornflowerblue
+  color: cornflowerblue;
+  transition: all .3s;
+
+  &:hover {
+    color: dodgerblue;
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -155,6 +160,10 @@ h3 {
   font-weight: 600;
 }
 
+h2 {
+  font-size: 24px;
+}
+
 video.video {
   width: 100%;
   border-radius: 6px;
@@ -164,6 +173,13 @@ video.video {
 .hero__h1 {
   font-size: 32px;
   margin: 0.4em 0;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+}
+
+header {
+  max-width: 288px;
+}
 
 .crop-a {
   object-position: -2px -2px;
