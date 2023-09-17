@@ -45,6 +45,8 @@ const job = {
 
     thumb: `https://media.contra.com/image/upload/ar_1.333,c_fill,f_auto,q_auto,w_384/titnde36nyiuoypugm2t`,
 
+    thumbClass: 'crop-a',
+
     years: 'Spring 2022',
 
     videos: [

@@ -11,6 +11,7 @@ interface IndexJobProps {
   slug: string;
   title: string;
   thumb: string;
+  thumbClass?: string;
   excerpt: string;
   created: string;
   disabled?: boolean;
@@ -86,6 +87,7 @@ export default function Home({ jobs }) {
 const Job: React.FC<IndexJobProps> = ({
   title,
   thumb,
+  thumbClass,
   slug,
   excerpt,
   disabled,
@@ -95,7 +97,7 @@ const Job: React.FC<IndexJobProps> = ({
   return (
     <Link href={`/jobs/${slug}`} className={styles.job}>
       <Image
-        className={styles.thumb}
+        className={cn(styles.thumb, thumbClass)}
         src={thumb}
         alt={title}
         width={256}
