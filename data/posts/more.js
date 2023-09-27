@@ -1,7 +1,7 @@
 const job = {
     created: '2022',
 
-    disabled: true,
+    // disabled: true,
 
     client: 'Aviasales',
 
@@ -25,7 +25,7 @@ const job = {
         There was also an animation of typing and un-typing of a speech bubble text depending on scroll direction. And some video fragments were looped to compensate for variable content height.
     `,
 
-    excerpt: `%%`,
+    excerpt: `of pre-rendered 3D scenes`,
 
     links: [
         {
