@@ -17,7 +17,8 @@ const job = {
 
     links: [
         {
-            text: "Here's what it looks like in action",
+            text: "Here's what it looks like in action:",
+            linkText: 'wheelings.vercel.app',
             url: "https://wheelings.vercel.app/"
         }
     ],
