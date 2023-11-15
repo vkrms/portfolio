@@ -6,7 +6,7 @@ const job = {
     title: "Rotating Feelings Wheel in React & d3.js",
 
     images: [
-        ''
+        `/screens/wheelings/wheelings_1.webp`,
     ],
 
     text: `

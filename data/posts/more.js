@@ -1,7 +1,7 @@
 const job = {
     created: '2022',
 
-    // disabled: true,
+    disabled: true,
 
     client: 'Aviasales',
 
