@@ -1,7 +1,7 @@
 const job = {
     created: '2022',
 
-    disabled: true,
+    disabled: false,
 
     client: 'Aviasales',
 
@@ -47,7 +47,7 @@ const job = {
         'Canvas',
     ],
 
-    thumb: ``,
+    thumb: `/screens/more-og.webp`,
 
     years: '2022',
 }
