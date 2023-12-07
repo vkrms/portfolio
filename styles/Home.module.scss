@@ -8,9 +8,11 @@
     // aspect-ratio: 1200/630;
 
     @include small {
-        // width: 128px;
-        align-self: flex-start;
+        align-self: flex-start;        
+        aspect-ratio: 16/9;
         width: 256px;
+        flex: 0 0 256px;
+        object-position: -2px;
     }
 }
 
