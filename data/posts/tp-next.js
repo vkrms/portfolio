@@ -38,7 +38,7 @@ const job = {
     vids: [
         {
             linkText: 'Video demo',
-            url: '/%%',
+            url: '/tp-next-home.webm',
         }
     ],
 
@@ -48,14 +48,10 @@ const job = {
 
     links: [
         {
-            text: 'Visit at:',
+            text: 'Visit at: ',
             linkText: 'travelpayouts.com',
             url: 'https://travelpayouts.com/',
-        },
-        {
-            linkText: 'Video demo',
-            url: '/%%',
-        }
+        },        
     ],
 
 
